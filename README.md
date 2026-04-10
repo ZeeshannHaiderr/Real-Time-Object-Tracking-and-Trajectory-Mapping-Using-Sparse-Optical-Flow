@@ -44,16 +44,16 @@ The project follows a multi-stage processing pipeline to ensure real-time accura
 ## Mathematical Foundation
 The tracking logic is grounded in the optical flow constraint equation:
 
-I_{x}u + I_{y}v + I_{t} = 0
+I(x)u + I(y)v + I(t) = 0
 
 Where:
 * (u, v) represents pixel displacement.
-* I_{x}, I_{y} are spatial image gradients.
-* I_{t} is the temporal image gradient.
+* I(x), I(y) are spatial image gradients.
+* I(t) is the temporal image gradient.
 
 The Kalman Filter further refines this by modeling the system state x_k as:
 
-x_{k} = [x, y, v_{x}, v_{y}]^{T}
+x(k) = [x, y, v(x), v(y)]^(T)
 
 ---
 
